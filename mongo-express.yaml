@@ -39,13 +39,13 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: mongodb-express-service
+  name: mongo-express-service
 spec:
   selector:
-    app: mongodb-express
-  # type: LoadBalancer # Uncomment for external service
+    app: mongo-express
+  type: LoadBalancer 
   ports:
     - protocol: TCP
       port: 8081
       targetPort: 8081
-      # nodePort: 30000 # Uncomment for external service
+      nodePort: 30000
