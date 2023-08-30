@@ -1,0 +1,6 @@
+1. SET DEFAULT NAMESPACE:
+kubectl config set-context --current --namespace=my-namespace
+
+2. VERIFY DEFAULT NAMESPACE:
+kubectl config view --minify | findstr namespace:
+
