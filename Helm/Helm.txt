@@ -1,0 +1,40 @@
+WHAT IS HELM?
+
+Helm is widely known as "the package manager for Kubernetes". 
+Although it presents itself like this, its scope goes way beyond that of a simple package manager.
+
+
+Helm is a package manager for Kubernetes applications. It helps you define, install, and manage even the most
+ complex Kubernetes applications. Helm is designed to simplify the deployment and management of Kubernetes applications by providing
+  a standardized way to package, distribute, and manage applications and their dependencies.
+
+HERE ARE SOME KEY CONCEPTS RELATED TO HELM:
+
+1. Charts: In Helm, a package of pre-configured Kubernetes resources is called a "Chart." 
+A Chart can include multiple Kubernetes manifests, templates, and values that allow you to customize the deployment of your application.
+
+2. Templates: Charts include templates that define the Kubernetes resources required for your application. 
+These templates can be parameterized using values that are specified when you install the Chart.
+
+3. Values: Values are configuration options that are used to customize the behavior of a Chart when it's installed. 
+They can include things like configuration settings, environment variables, and more.
+
+4. Repository: Helm Charts can be stored in repositories, which are collections of Charts that you can pull from when 
+you want to deploy an application. Public repositories like the official Helm Hub or private repositories can be used.
+
+5. Release: When you install a Chart, it creates a Kubernetes deployment called a "Release." Releases are instances of a 
+Chart that are running in your cluster.
+
+Using Helm, you can avoid writing extensive Kubernetes YAML manifests for each application you deploy. 
+Instead, you can define and customize applications using Helm Charts, making deployment, version management, and 
+maintenance more streamlined.
+
+To use Helm:
+
+Install Helm on your local machine or within your development environment.
+Create or use existing Helm Charts that define your Kubernetes applications.
+Customize the Charts using values or parameterized templates.
+Install the Chart into your Kubernetes cluster, creating a Release.
+Helm is a valuable tool for managing Kubernetes applications, especially as your projects become more complex and involve 
+multiple components and configurations. It's widely adopted within the Kubernetes community and provides a higher level of abstraction 
+for managing deployments.
